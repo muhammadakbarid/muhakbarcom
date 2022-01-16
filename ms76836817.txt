@@ -1,0 +1,5 @@
+﻿{
+  "Description": "File verifikasi kepemilikan domain untuk Microsoft 365 - letakkan di akar situs web",
+  "Domain": "muhakbar.com",
+  "Id": "2c57112f-b19f-4d5f-94aa-4e6c557519af"
+}
