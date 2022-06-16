@@ -79,13 +79,13 @@ $whitelist = array(
 	'::1'
 );
 if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
+	$u_db = 'root';
+	$p_db = '';
+	$n_db = 'akbr_mi';
+} else {
 	$u_db = 'muha9446_akbar';
 	$p_db = '5wL1*fj1()x,';
 	$n_db = 'muha9446_mi';
-} else {
-	$u_db = 'muhakbar_admin';
-	$p_db = 'muarihaku121';
-	$n_db = 'muhakbar_mi';
 }
 
 $db['default'] = array(
