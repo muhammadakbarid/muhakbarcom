@@ -83,17 +83,17 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
 	$p_db = '5wL1*fj1()x,';
 	$n_db = 'muha9446_mi';
 } else {
-	$u_db = '';
-	$p_db = '';
-	$n_db = '';
+	$u_db = 'muhakbar_admin';
+	$p_db = 'muarihaku121';
+	$n_db = 'muhakbar_mi';
 }
 
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'muhakbar_admin',
-	'password' => 'muarihaku121',
-	'database' => 'muhakbar_mi',
+	'username' => 'u_db',
+	'password' => 'p_db',
+	'database' => 'n_db',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
