@@ -73,10 +73,25 @@
 $active_group = 'default';
 $query_builder = TRUE;
 
+$whitelist = array(
+	'127.0.0.1',
+	'localhost',
+	'::1'
+);
+if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
+	$u_db = 'muha9446_akbar';
+	$p_db = '5wL1*fj1()x,';
+	$n_db = 'muha9446_mi';
+} else {
+	$u_db = '';
+	$p_db = '';
+	$n_db = '';
+}
+
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-'username' => 'muhakbar_admin',
+	'username' => 'muhakbar_admin',
 	'password' => 'muarihaku121',
 	'database' => 'muhakbar_mi',
 	'dbdriver' => 'mysqli',
