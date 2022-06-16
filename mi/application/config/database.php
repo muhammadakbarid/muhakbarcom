@@ -91,9 +91,9 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'u_db',
-	'password' => 'p_db',
-	'database' => 'n_db',
+	'username' => $u_db,
+	'password' => $p_db,
+	'database' => $n_db,
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
